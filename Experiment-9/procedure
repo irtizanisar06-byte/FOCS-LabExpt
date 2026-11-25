@@ -1,1 +1,34 @@
-
+Experiment: Capturing and Analysing Network Traffic to Understand Cookie Security
+Aim:
+To capture and analyse network traffic using Wireshark and inspect cookies in a web browser to understand their working, security attributes, and possible security risks. To study how cookies maintain user sessions and how HTTPS protects cookie information during communication.
+Tools / Requirements:
+Wireshark – For capturing and analysing network traffic.
+Google Chrome – For accessing websites and observing cookies.
+Cookie Editor Extension – For viewing and managing browser cookies.
+Internet Connection – To access websites and generate network traffic.
+Theory:
+Cookies are small data files stored by websites in a user's browser to maintain login sessions, remember user preferences, and improve the browsing experience. They help websites identify users and maintain their sessions without requiring them to log in repeatedly.
+However, cookies may create security risks if they are not properly protected. Attackers may misuse stolen session cookies to perform session hijacking and gain unauthorized access to user accounts. To prevent such attacks, websites use different security attributes such as Secure, HttpOnly, SameSite, and Expiration.
+HTTPS uses TLS encryption to protect communication between the browser and the web server. It helps prevent attackers from reading sensitive cookie information while it is being transmitted over the network.
+Procedure:
+Open Wireshark and select the active Wi-Fi network interface to start capturing network traffic.
+Open Google Chrome and visit Instagram or another website to generate browsing traffic.
+Install and open the Cookie Editor extension in Google Chrome to view the cookies stored by the website.
+Inspect the available cookies and observe their different security attributes, such as Secure, HttpOnly, SameSite, and Expiration.
+Analyse the TLS handshake and DNS queries in Wireshark to understand how the browser establishes secure communication with the website.
+Apply suitable HTTP and TLS display filters in Wireshark to examine web traffic and identify cookie-related information where visible.
+Observe how HTTPS encrypts the communication and protects sensitive information from being directly viewed in captured network packets.
+Stop the packet capture and carefully analyse the collected traffic and cookie properties.
+Cookie Security Attributes:
+1. Secure: This attribute ensures that cookies are sent only over secure HTTPS connections and helps protect them from being transmitted over insecure HTTP connections.
+2. HttpOnly: This attribute prevents JavaScript from accessing cookies, reducing the risk of cookie theft through certain cross-site scripting (XSS) attacks.
+3. SameSite: This attribute controls when cookies are sent with cross-site requests and helps protect against Cross-Site Request Forgery (CSRF) attacks.
+4. Expiration: This attribute defines the validity period of a cookie and determines when the cookie should expire or be removed from the browsbetwe
+Defensive Measures:
+Use HTTPS/TLS encryption to protect communication between the browser and the web server.
+Enable Secure and HttpOnly flags for cookies to improve their security.
+Configure the SameSite attribute to reduce the risk of cross-site cookie attacks.
+Set appropriate cookie expiration times and expire session cookies after logout.
+Avoid storing sensitive information directly in cookies and use proper session management techniques.
+Result:
+Network traffic was successfully captured and analysed using Wireshark. Cookies were inspected through the Cookie Editor extension, and their security properties, including Secure, HttpOnly, SameSite, and Expiration, were studied. The TLS handshake and HTTPS encryption were also observed, helping us understand how secure communication protects cookie information and reduces the risk of session hijacking.

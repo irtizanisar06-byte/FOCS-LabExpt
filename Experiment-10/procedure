@@ -1,1 +1,36 @@
-
+Experiment: Reading Keyboard Input in C Using getch()
+Aim:
+To implement a basic keylogger in C to read keyboard input, display ASCII values of entered characters, and store the input data in text and RTF files.
+Tools / Requirements:
+GCC Compiler
+C Programming Language
+Linux Terminal
+Text Editor
+LibreOffice Writer
+Theory:
+A keylogger records keyboard input using software. In this experiment, a basic C program reads user-entered keys, displays their ASCII values, and stores the input in a file.
+Types of Keyloggers:
+Software Keylogger: Records keyboard input using software.
+Hardware Keylogger: Records keystrokes using a physical device.
+Important Functions:
+getchar() – Reads a character.
+putchar() – Displays a character.
+fopen() – Opens or creates a file.
+fputc() – Writes a character into a file.
+fclose() – Closes a file.
+tcgetattr() – Reads terminal settings.
+tcsetattr() – Changes terminal settings.
+Procedure:
+Write a basic C program to read keyboard input using getchar().
+Display each character along with its ASCII value.
+Store the entered text in a file.
+Save the output in text and RTF formats.
+Compile and execute the program using GCC.
+Verify the stored data in the output files.
+Precautions:
+Use only authorized test input.
+Handle files properly.
+Compile the program without errors.
+Do not record anyone's keystrokes without permission.
+Result:
+A basic keylogger program was successfully implemented in C to read keyboard input, display ASCII values, and store the entered data in text and RTF files.
